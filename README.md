@@ -64,5 +64,5 @@ Example
 
 
 
-For more usage info, please refer to the tests. **Pager.spec.js**
+For more usage info, please refer to the tests. [Pager.spec.js](../Pager.spec.js "Jasmine test suite")
   
