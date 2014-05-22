@@ -73,4 +73,12 @@ describe("Pager", function () {
         pager.previousPage();
         expect(pager.currentPageNumber).toEqual(1);
     });
+    
+    it("lastPage will return last page number available", function () {
+        pager = new Pager(list, 3);
+        expect(pager.lastPageNumber).toEqual(3);
+        pager = new Pager(list, 4);
+        expect(pager.lastPageNumber).toEqual(2);
+    });
+
 });

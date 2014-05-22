@@ -17,6 +17,8 @@ var Pager = function (data, itemsPerPage) {
 
     this.pages = _pages;
     this.currentPageNumber = 1;
+    this.lastPageNumber = _pages.length - 1;
+
 
     this.goToPage = function (pageNumber) {
         if (_pages[pageNumber]) {
