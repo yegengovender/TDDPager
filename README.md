@@ -61,6 +61,10 @@ Example
 	<div class="mobile-pager">Page {{pager.currentPageNumber}} / {{pager.pages.length - 1}}</div>
 	<a class="btn btn-info" href="#" ng-click="pager.nextPage()">></a>
 	<a class="btn btn-info" href="#" ng-click="pager.goToPage(pager.lastPageNumber)">>></a>
+	
+	<li ng-repeat="item in pager.pages[pager.currentPageNumber]"
+		{{item}}
+	</li>
 
 
 
