@@ -5,7 +5,8 @@ Simple javascript library for paging data. Splits data into 'pages' array. Desig
 
 
 Usage
-	var pager = new Pager(_data_, _itemsPerPage_, _[range]_)
+-----
+	var pager = new Pager(_data_, _itemsPerPage_, _[range]_);
 	
 	
 Params
