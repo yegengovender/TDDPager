@@ -1,7 +1,7 @@
 TDDPager
 ========
 
-Simple javascript library for paging data. Splits data into 'pages' array.
+Simple javascript library for paging data. Splits data into 'pages' array. Designed for use in angular.js application
 
 
 Usage
@@ -41,7 +41,7 @@ Output
 
 Example
 -------
-### JS
+### JS (angular controller)
 	var list = [....];
 	$scope.pager = new Pager(list, 20, 8);
 
@@ -60,6 +60,8 @@ Example
 	<div class="mobile-pager">Page {{pager.currentPageNumber}} / {{pager.pages.length - 1}}</div>
 	<a class="btn btn-info" href="#" ng-click="pager.nextPage()">></a>
 	<a class="btn btn-info" href="#" ng-click="pager.goToPage(pager.lastPageNumber)">>></a>
-  
-  
+
+
+
+For more usage info, please refer to the tests.
   
