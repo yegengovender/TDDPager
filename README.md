@@ -64,5 +64,5 @@ Example
 
 
 
-For more usage info, please refer to the tests.
+For more usage info, please refer to the tests. **Pager.spec.js**
   
