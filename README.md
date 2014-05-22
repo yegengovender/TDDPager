@@ -28,7 +28,18 @@ Usage
   this.previousPage(): Changes current page number to previous page.
 
 
-  
+Example
+
+            <a class="btn btn-info" href="#" ng-click="pager.goToPage(1)"><<</a>
+            <a class="btn btn-info" href="#" ng-click="pager.previousPage()"><</a>
+            <div class="fullsize-pager">
+                <a class="btn" href="#"
+                   ng-repeat="pageNumber in pager.visiblePageNumbers()"
+                   ng-click="pager.goToPage(pageNumber)"
+                   ng-class="{'btn-primary': (pager.currentPageNumber == pageNumber), 'btn-info': (pager.currentPageNumber != pageNumber)}">
+                    {{pageNumber}}
+                </a>                
+            </div>  
   
   
   
