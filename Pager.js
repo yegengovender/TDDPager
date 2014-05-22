@@ -19,12 +19,11 @@ var Pager = function (data, itemsPerPage) {
     this.currentPageNumber = 1;
     this.lastPageNumber = _pages.length - 1;
 
-
     this.goToPage = function (pageNumber) {
         if (_pages[pageNumber]) {
             this.currentPageNumber = pageNumber;
         }
-    }
+    };
 
     this.nextPage = function () {
         this.goToPage(this.currentPageNumber + 1);
